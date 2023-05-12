@@ -8,12 +8,12 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 14;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,6 +31,17 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
-       
+
     }
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Human")
+        {
+            //destory this object
+            Destroy(collider.gameObject);
+        }
+    }
+
+
+
 }
