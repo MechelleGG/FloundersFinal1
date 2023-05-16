@@ -7,13 +7,15 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 14;
+    public int pointValue;
 
 
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -39,9 +41,8 @@ public class PlayerController : MonoBehaviour
         {
             //destory this object
             Destroy(collider.gameObject);
+            gameManager.UpdateScore(pointValue);
         }
+
     }
-
-
-
 }
