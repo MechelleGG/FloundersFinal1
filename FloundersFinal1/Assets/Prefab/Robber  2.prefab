@@ -1008,6 +1008,7 @@ GameObject:
   - component: {fileID: 1590693757088479818}
   - component: {fileID: 6255625687090426922}
   - component: {fileID: 3178099547254771404}
+  - component: {fileID: 5407074528868431944}
   m_Layer: 0
   m_Name: Robber  2
   m_TagString: Human
@@ -1085,6 +1086,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
+--- !u!114 &5407074528868431944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6103329855803013772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e589a351cc84a4e859d9ca03ebf2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6463697486449971825
 GameObject:
   m_ObjectHideFlags: 0

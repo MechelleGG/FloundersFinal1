@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 14;
     public int pointValue;
+    public ParticleSystem explosionParticle;
 
 
     private GameManager gameManager;
@@ -41,8 +42,13 @@ public class PlayerController : MonoBehaviour
         {
             //destory this object
             Destroy(collider.gameObject);
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             gameManager.UpdateScore(pointValue);
-        }
 
+        }
+       /* if (!gameObject.CompareTag("Human"))
+        {
+            gameManager.GameOver();
+        }*/
     }
 }
