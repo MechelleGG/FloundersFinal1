@@ -519,7 +519,7 @@ MonoBehaviour:
   horizontalInput: 1
   speed: 10
   xRange: 14
-  pointValue: 0
+  pointValue: 5
   explosionParticle: {fileID: 3548588485384254794, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
 --- !u!54 &385142512
 Rigidbody:
@@ -560,6 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 568093977}
   - component: {fileID: 568093978}
+  - component: {fileID: 568093979}
   m_Layer: 0
   m_Name: Sensor
   m_TagString: Untagged
@@ -575,7 +576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568093976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.014856624, y: 0.44, z: -4.74}
+  m_LocalPosition: {x: 0.014856624, y: 0.44, z: -4.42}
   m_LocalScale: {x: 0.18570825, y: 0.27734596, z: 0.21900769}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -590,11 +591,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568093976}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 20.484945, y: 1, z: 1}
   m_Center: {x: 1.0719296, y: 0, z: 0}
+--- !u!114 &568093979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b56b60bff254854995ad1fb19d8a375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &673032898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -738,7 +751,8 @@ MonoBehaviour:
   humanPrefab:
   - {fileID: 5747956129543360305, guid: c3aeb4607d772494bb989d10c69e1ab9, type: 3}
   - {fileID: 6103329855803013772, guid: 96640cc72706e9b4795a1eaee3d1a9ca, type: 3}
-  - {fileID: 6164842964579613207, guid: 94ce955a3e626c143820f2cfbd6db642, type: 3}
+  RockPrefab:
+  - {fileID: 4950625918678596200, guid: e04424bba42f8704f9cbdc0773d273ed, type: 3}
 --- !u!4 &1197376889
 Transform:
   m_ObjectHideFlags: 0
@@ -1238,7 +1252,7 @@ GameObject:
   - component: {fileID: 2057127711}
   - component: {fileID: 2057127710}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

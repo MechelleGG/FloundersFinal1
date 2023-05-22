@@ -46,9 +46,6 @@ public class PlayerController : MonoBehaviour
             gameManager.UpdateScore(pointValue);
 
         }
-       /* if (!gameObject.CompareTag("Human"))
-        {
-            gameManager.GameOver();
-        }*/
+       
     }
 }
