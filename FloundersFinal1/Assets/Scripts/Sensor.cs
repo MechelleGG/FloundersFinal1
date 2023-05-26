@@ -24,6 +24,7 @@ public class Sensor : MonoBehaviour
         {
             Debug.Log("I am calling game over");
             gameManager.GameOver();
+            
         }
     }
 }
